@@ -1,6 +1,8 @@
 # JogoDaVelha_libGDX
 Jogo da velha simples desenvolvido em Java utilizando o framework libGDX.
 
+<img width="300px" src="JogoDaVelha/assets/eclipse_mqdfr84Osz.gif">
+
 
 <br/>
 Canal no Youtube 
