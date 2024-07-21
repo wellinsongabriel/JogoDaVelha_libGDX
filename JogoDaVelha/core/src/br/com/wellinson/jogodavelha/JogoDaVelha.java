@@ -79,8 +79,8 @@ public class JogoDaVelha extends ApplicationAdapter {
 		if(!fimDeJogo && Gdx.input.justTouched()) {
 			int x = Gdx.input.getX();
 			int y = Gdx.graphics.getHeight() - Gdx.input.getY();
-			int linha = y / 100;
-			int coluna = x / 100;
+			int linha = x / 100;
+			int coluna = y / 100;
 			
 			if(linha >=0 && linha < 3 && coluna >=0 && coluna < 3 && tabuleiro[linha][coluna] == '-') {
 				tabuleiro[linha][coluna] = jogador;
@@ -118,8 +118,8 @@ public class JogoDaVelha extends ApplicationAdapter {
 	private void desenharJogadas() {
 		for(int i = 0; i < 3; i++) {
 			for(int j = 0; j < 3; j++) {
-				float posX = j * 100 + 10;
-				float posY = i * 100 + 10;
+				float posX = i * 100 + 10;
+				float posY = j * 100 + 10;
 				
 				if(tabuleiro[i][j] == 'X')
 					batch.draw(desenhoX, posX, posY);
